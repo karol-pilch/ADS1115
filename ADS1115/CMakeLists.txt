@@ -16,7 +16,7 @@ endif()
 
  # setup export preprocessor definitions
 if(BUILD_SHARED_LIBS)
-  target_compile_definitions(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_EXPORTS)
+  target_compile_definitions(${PROJECT_NAME} INTERFACE ${PROJECT_NAME}_EXPORTS)
   target_compile_definitions(${PROJECT_NAME} INTERFACE ${PROJECT_NAME}_IMPORTS)
 endif()
 
